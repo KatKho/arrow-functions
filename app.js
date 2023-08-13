@@ -180,17 +180,17 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scope();
+joe.scope();
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// joe.scopeArrow();
+joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// It refers to the "joe: object, the instance of the "Student" class
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// In this case, the value of "this" actually refers to the global scope, or in the context of a browser, it would refer to the window object
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// It is different because arrow functions do not bind their own "this" context
